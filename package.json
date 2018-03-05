@@ -1,7 +1,7 @@
 {
-  "name": "PHXASSISTEDLIVING.COM",
-  "version": "4.0.0",
-  "description": "Render/precompile Lo-Dash/Underscore templates",
+  "name": "PizzaFactory",
+  "version": "1",
+  "description": "jquery single page app",
   "license": "MIT",
   "repository": "",
   "author": {

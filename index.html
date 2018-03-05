@@ -10,11 +10,7 @@
   </head>
 
   <body>
-
   <header>
-
-
-
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container">
       <a class="navbar-brand" href="index.html">Pizza Factory</a>
@@ -33,10 +29,9 @@
       </div>
       </div>
     </nav>
-
   </header>
 
-  <main role="main" class="container">
+  <main role="main" class="app-init container">
     <div class="content__container"></div>
   </main>
 
@@ -44,21 +39,33 @@
 
   </div> -->
 
-
   <footer class="footer">
     <div class="container">
       <span class="text-muted">&copy; Pizza Factory 2018, All Rights Reserved. </span>
     </div>
   </footer>
 
-
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-<script type="text/javascript" src="js/jquery.loadTemplate.min.js"></script>
+<script type="text/javascript" src="js/mustache.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/custom.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	(function($) {
+		$('.app-init').jPizzaFactory({
+			// search: 'dogs',
+			// limit: 3,
+			// complete: function() {
+			// 	console.log(arguments);
+			// },
+			// refresh: 4000,
+			// transition: 'slideToggle'
+		});
+	})( jQuery );
+</script>
+
 </body>
 </html>
 
