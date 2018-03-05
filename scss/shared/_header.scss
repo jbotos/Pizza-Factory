@@ -1,0 +1,95 @@
+.header {
+    background: #fff;
+}
+
+.tagline__container {
+    background: #eee7df;
+    .tagline-slug {
+        font-style: italic;
+        padding: 5px;
+        text-align: center;
+        margin: 0;
+        a {
+            color: #65524e;
+        }
+    }
+}
+
+
+.nav-top__container {
+
+}
+.top-nav {
+    margin: 0;
+    float: right;
+    li {
+        display: inline-block;
+        margin-left: 5px;
+        a {
+            display: block;
+            padding: 10px;
+        }
+    }
+}
+.top-cta {
+    float: right;
+    clear: right;
+    padding-top: 28px;
+    .phone-number {
+        font-size: 18px;
+        display: inline-block;
+        position: relative;
+        margin-right: 10px;
+        &:after {
+          content: ' ';
+          top: 0;
+          right: 10px;
+          position: absolute;
+          border-right: 1px solid gray;
+        }
+    }
+    .quote-request {
+      display: inline-block;
+      a {
+        color: #65524e;
+        display: block;
+        padding: 5px 10px;
+        text-transform: uppercase;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        @include border-radius(4px);
+        &:hover {
+          text-decoration: none;
+          background: #7c4751;
+          border: 1px solid #7c4751;
+          color: #fff;
+        }
+      }
+    }
+}
+
+
+.brand__container {
+    width: 195px;
+    height: 90px;
+    overflow: hidden;
+    position: relative;
+}
+
+.brand__logo {
+    h1 {
+        font-size: 30px;
+        z-index: -1;
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+}
+
+
+// .btn__menu-toggle {
+//     display: none !important;
+// }

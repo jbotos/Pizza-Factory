@@ -1,0 +1,178 @@
+.pre-footer {
+    &__wrapper {
+        background: #fff;
+    }
+    &__container {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    &__content {
+
+        li {
+            &:hover {
+                background: #eee7df;
+                cursor: pointer;
+            }
+        }
+    }
+    &--item {
+        padding-left: 80px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            max-width: 60px;
+        }
+        h4 {
+            font-family: 'Courgette', cursive;
+        }
+    }
+    @media(max-width: 767px) {
+        &--item {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            min-height: 80px;
+            img {
+                top: 10px;
+            }
+            h4 {
+                margin-top: 0;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    @media(max-width: 940px) {
+        &__content {
+            li {
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+        }
+        /* .pre-footer--item {
+            padding-right: 15px;
+            padding-left: 15px;
+        } */
+    }
+}
+
+.footer {
+    &__content {
+        padding-top: 25px;
+        h2 {
+            color: #dcd3cb;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #dcd3cb;
+            text-align: center;
+            margin: 0 10% 35px 10%;
+        }
+    }
+    &__buttons {
+        text-align: center;
+        @include clearfix;
+        margin-bottom: 35px;
+        li {
+            display: inline-block;
+        }
+        &-divider {
+            padding: 0 15px;
+            color: #dcd3cb;
+            font-size: 1.2em;
+        }
+    }
+    &__copyright {
+        text-align: center;
+        a {
+            color: #dcd3cb;
+        }
+        p {
+            color: #dcd3cb;
+            font-size: 1em;
+        }
+    }
+    &__links {
+        text-align: center;
+        li {
+            display: inline-block;
+            border-color: #dcd3cb;
+            a {
+                color: #dcd3cb;
+            }
+        }
+    }
+    @media(max-width: 555px) {
+        &__buttons {
+            padding: 0 15px;
+            li {
+                display: block;
+                margin-bottom: 10px;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.social-icons {
+    padding-top: 45px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+    border-top: 1px solid #7c7477;
+    border-bottom: 1px solid #7c7477;
+
+    ul {
+        text-align: center;
+        position: relative;
+        &::before {
+            content: "FIND US ON";
+            color: #dcd3cb;
+            text-align: center;
+            position: absolute;
+            top: -25px;
+            left: 0;
+            width: 100%;
+        }
+        li {
+            display: inline-block;
+            margin-right: 5px;
+            &:last-child {
+                margin: 0;
+            }
+            a {
+                height: 33px;
+                width: 33px;
+                display: block;
+                background-image: url('../img/social-icons-footer.png');
+                background-repeat: no-repeat;
+                background-size: 33px auto;
+                background-color: $social_icons__background;
+                @include border-radius(20px);
+                @include transition('background-color', .5s, ease);
+                &:not(:hover) {
+                    //@include tilt(0deg);
+                }
+                &:hover {
+                    background-color: darken($social_icons__background, 25%);
+                    cursor: pointer;
+                    //@include tilt(15deg, 2s, 5s, 5s); //$degrees, $delay, $duration, $animation
+                }
+            }
+            .facebook {
+                background-position: 0 0;
+            }
+            .youtube {
+                background-position: 0 -33px;
+            }
+            .linkedin {
+                background-position: 0 -65px;
+            }
+            .pinterest {
+                background-position: 0 -95px;
+            }
+        }
+    }
+}

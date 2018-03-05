@@ -1,0 +1,163 @@
+body {
+  padding-top: 60px;
+  background: url('../img/bg.jpeg');
+}
+
+.table {
+  tr {
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      background: whitesmoke;
+    }
+  }
+}
+
+section {
+  //border-bottom: 1px solid gainsboro;
+}
+
+
+.section__container {
+  padding: 0 15px;
+}
+
+.nav__link {
+  color: #5454ff;
+  display: block;
+  //background: red;
+  //padding: 10px 0;
+  width: 100%;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.content {
+  &__container {
+    margin-bottom: 15px;
+  }
+}
+
+
+
+.heading {
+  &__container {
+    //background: #ececec;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  &__title {
+    float: left;
+    h1 {
+      margin: 0;
+    }
+    .title--style {
+      font-size: 22px;
+      font-weight: normal;
+    }
+  }
+  &__action {
+    float: right;
+  }
+}
+
+
+
+
+
+
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #e2e2e2;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 30px 15px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+
+
+
+
+.ul__suggestions {
+  li {
+    display: inline-block;
+    font-size: .9em;
+    padding: 1px 5px;
+    border: 1px solid #b3b3b3;
+    @include border-radius(3px);
+    font-style: italic;
+    margin-bottom: 5px;
+  }
+  &::before {
+    font-style: italic;
+    content: attr(title) ": ";
+  }
+}
+
+
+
+.box {
+    border: 1px solid hsla(0,0%,80%,.76);
+    background: #fff;
+    margin-bottom: 10px;
+    @include border-radius(3px);
+}
+
+.box__heading {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 15px 15px 13px 15px;
+    //margin-bottom: 20px;
+    position: relative;
+    @include clearfix;
+    h1, h2, h3 {
+      margin: 0;
+    }
+    .heading--title {
+      float: left;
+    }
+    .heading--action {
+      float: right;
+    }
+}
+
+.box__content, .box__content--overflow {
+    padding: 0 15px 15px 15px;
+}
+.box__content {
+  padding: 15px;
+}

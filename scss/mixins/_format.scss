@@ -1,0 +1,6 @@
+@mixin text__style() {
+  font-size: $text__size;
+  line-height: $text__line-height;
+  font-weight: $text__weight;
+  color: $text__color;
+}

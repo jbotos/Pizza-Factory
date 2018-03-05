@@ -1,0 +1,28 @@
+.btn__container {
+  background: #ececec;
+  padding: 10px;
+  .btn {
+    display: inline-block;
+  }
+}
+
+.btn {
+    font-family: 'PT Sans', sans-serif;
+    //text-transform: uppercase;
+    display: block;
+}
+.btn-primary {
+    //background: #ffe991;
+    //padding: 10px 15px;
+    //color: #4b272e;
+    //font-size: 1.3em;
+    border-radius: 3px;
+    &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+.btn-secondary {
+  background: #fff;
+  color: gray;
+}

@@ -1,0 +1,105 @@
+
+
+$COLOR_WHITE:                                    #fff;
+$brand_color_blue_border:                        #5094ce;
+
+/*-------------------------------------------------------------------------*/
+/*  BREAKPOINTS
+/*-------------------------------------------------------------------------*/
+
+$breakpoint__xs: 545px;
+$breakpoint__sm: 768px;
+$breakpoint__md: 992px;
+$breakpoint__lg: 1199px;
+$breakpoint__xl: 1200px;
+
+
+/*-------------------------------------------------------------------------*/
+/*  BRAND COLORS
+/*-------------------------------------------------------------------------*/
+$BRAND_COLOR_BLUE:                                 #006bc6;
+$BRAND_COLOR_BLUE_LIGHT:                           #54a6ea;
+$BRAND_COLOR_BLUE_DARK:                            #004e90;
+$BRAND_COLOR_GREEN:                                #2ecc40;
+
+$BRAND_COLOR_BROWN_DARK:                           #574b4e;
+
+/*-------------------------------------------------------------------------*/
+/*  GLOBALS
+/*-------------------------------------------------------------------------*/
+$color_text:                                      #282828;
+
+/*-------------------------------------------------------------------------*/
+/*  FORMATTING
+/*-------------------------------------------------------------------------*/
+$text__size: 1.15em;
+$text__line-height: 24px;
+$text__weight: 400;
+$text__color: #282828;
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------*/
+/*  TOP BAR
+/*-------------------------------------------------------------------------*/
+
+$top_bar__bg_color:                               $COLOR_WHITE;
+$top_bar__btn_color:                              $COLOR_WHITE;
+$top_bar__btn_bg_color:                           $BRAND_COLOR_BLUE;
+$top_bar__btn_bg_color_dark:                      darken($BRAND_COLOR_BLUE, 5%);
+$top_bar__btn_bg_color_light:                     lighten($BRAND_COLOR_BLUE, 10%);
+
+/*-------------------------------------------------------------------------*/
+/*  NAVIGATION
+/*-------------------------------------------------------------------------*/
+$navbar__bg_color:                                 $BRAND_COLOR_BLUE;
+
+$nav__mobile_li_color:                             $COLOR_WHITE;
+$nav__mobile_li_bg_color:                          $BRAND_COLOR_BLUE;
+$nav__mobile_li_li_bg_color:                       $BRAND_COLOR_BLUE_DARK;
+$nav__mobile_li_li_border:                         1px solid #2c79b9;
+$nav__mobile_li_bg_color_hover:                    $BRAND_COLOR_BLUE_LIGHT;
+
+$nav__desktop_li_color:                            $COLOR_WHITE;
+$nav__desktop_li_bg_color:                         $BRAND_COLOR_BLUE;
+$nav__desktop_li_li_bg_color:                      $BRAND_COLOR_BLUE;
+$nav__desktop_li_bg_color_hover:                   $BRAND_COLOR_BLUE_LIGHT;
+
+/*-------------------------------------------------------------------------*/
+/*  HEADINGS (H1, H2, ...)
+/*-------------------------------------------------------------------------*/
+
+$heading__h1_color:                                $BRAND_COLOR_BLUE;
+$heading__h2_color:                                $BRAND_COLOR_BLUE;
+$heading__h3_color:                                $BRAND_COLOR_BLUE;
+$heading__h4_color:                                $BRAND_COLOR_BLUE;
+$heading__h5_color:                                $BRAND_COLOR_BLUE;
+
+/*-------------------------------------------------------------------------*/
+/*  FOOTER
+/*-------------------------------------------------------------------------*/
+
+$footer__color:                                     $COLOR_WHITE;
+$footer__bg_color:                                  $BRAND_COLOR_BLUE;
+$footer__border_color:                              #5094ce;
+
+/*-------------------------------------------------------------------------*/
+/*  BORDERS
+/*-------------------------------------------------------------------------*/
+
+
+
+$nav_container_background:                         #006bc6;
+$nav_link_color:                                   $COLOR_WHITE;
+$nav_link_background:                              #54a6ea;
+
+
+$header__phone_number:                             $BRAND_COLOR_GREEN;
+
+$social_icons__background:                         $BRAND_COLOR_BROWN_DARK;
+$header__social_background:                        $BRAND_COLOR_BROWN_DARK;
+$footer__social_background:                        $BRAND_COLOR_BROWN_DARK;
