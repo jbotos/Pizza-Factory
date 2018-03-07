@@ -58,6 +58,14 @@ if( typeof Object.create !== 'function') {
           _this.loadPageUrl();
         });
       },
+			getApiUrl : function() {
+				if(_this.router.pageId) {
+          apiUrl =  _this.options.apiUrl + '/'+ _this.router.dataType +'/' + _this.router.pageId;
+        } else {
+					apiUrl =  _this.options.apiUrl + '/'+ _this.router.dataType;
+				}
+				return apiUrl;
+			},
       getPageUrl : function() {
         _this.router.url = window.location.hash;
 				if (_this.router.url.indexOf('/') > -1)
@@ -115,16 +123,16 @@ if( typeof Object.create !== 'function') {
         });
       },
       createApiData: function(formData) {
-				var requestUrl = _this.options.apiUrl + '/'+ _this.router.dataType;
+				var requestUrl = _this.getApiUrl();;
 				_this.callApi('POST', requestUrl, formData);
       },
       updateApiData: function(data) {
-				var requestUrl = _this.options.apiUrl + '/'+ _this.router.dataType +'/' + _this.router.pageId;
+				var requestUrl = _this.getApiUrl();
 				var formData = { id : _this.router.pageId }
 				_this.callApi('PUT', requestUrl, formData);
       },
       deleteApiData: function(data) {
-				var requestUrl = _this.options.apiUrl + '/'+ _this.router.dataType +'/' + _this.router.pageId;
+				var requestUrl = _this.getApiUrl();
 				var formData = { id : _this.router.pageId }
 				_this.callApi('DELETE', requestUrl, formData);
       },
